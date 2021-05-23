@@ -1,0 +1,9 @@
+public String transformconsonantsintoS(String text) {
+char [] equalslowercase = {'b','c','d','f','g','h','j','q','l','m','n','ñ','p','q','r','t','v','w','x','y','z'};
+char [] equalscapital = {'B','C','D','F','G','H','J','Q','L','M','N','Ñ','P','Q','R','T','V','W','X','Y','Z'};
+
+for (int i = 0; i < 21; i++) {
+text=text.replace(equalslowercase[i], 'S');
+text=text.replace(equalscapital[i], 's');
+	}
+return text;
